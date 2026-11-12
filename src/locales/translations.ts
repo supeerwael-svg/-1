@@ -1,0 +1,50 @@
+export const translations = {
+  ar: {
+    appName: "محفظة الأستاذ",
+    offlineMode: "وضع غير متصل (Offline-first)",
+    home: "الرئيسية",
+    library: "المكتبة",
+    seminars: "الندوات",
+    forum: "المنتدى",
+    settings: "الإعدادات",
+    storageUsed: "المساحة المستهلكة",
+    persistentStorage: "التخزين الدائم مفعل",
+    enablePersist: "تفعيل الحفظ الدائم",
+    language: "اللغة",
+    theme: "المظهر",
+    light: "فاتح",
+    dark: "داكن"
+  },
+  fr: {
+    appName: "Portefeuille du Professeur",
+    offlineMode: "Mode hors-ligne",
+    home: "Accueil",
+    library: "Bibliothèque",
+    seminars: "Séminaires",
+    forum: "Forum",
+    settings: "Paramètres",
+    storageUsed: "Espace utilisé",
+    persistentStorage: "Stockage persistant activé",
+    enablePersist: "Activer le stockage persistant",
+    language: "Langue",
+    theme: "Thème",
+    light: "Clair",
+    dark: "Sombre"
+  },
+  en: {
+    appName: "Professor's Wallet",
+    offlineMode: "Offline-first mode",
+    home: "Home",
+    library: "Library",
+    seminars: "Seminars",
+    forum: "Forum",
+    settings: "Settings",
+    storageUsed: "Storage Used",
+    persistentStorage: "Persistent storage enabled",
+    enablePersist: "Enable Persistent Storage",
+    language: "Language",
+    theme: "Theme",
+    light: "Light",
+    dark: "Dark"
+  }
+};
