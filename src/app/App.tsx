@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { 
-  BookOpen, IdCard, FileText, GraduationCap, Book, Laptop, 
+  BookOpen, UserCheck, FileText, GraduationCap, Book, Laptop, 
   FolderTree, FileSpreadsheet, Flag, Film, Award, Archive, 
-  Search, Plus, Download, ChartPie, X, CheckCircle, FilePlus
+  Search, Plus, Download, BarChart3, X, CheckCircle, FilePlus
 } from 'lucide-react';
 
 interface SectionItem {
@@ -16,7 +16,7 @@ interface SectionItem {
 
 const initialSections: SectionItem[] = [
   { id: 1, title: "المذكرات التربوية والدروس", desc: "مذكرات الأسابيع، التحضير للبيداغوجيا، والدروس النموذجية.", iconName: "BookOpen", badge: "1", files: ["مذكرة الوحدة الأولى - رياضيات", "تحضير درس العلوم الطبيعية"] },
-  { id: 2, title: "الوثائق الخاصة بالأستاذ", desc: "القرارات الوزارية، المناهج، والوثائق الرسمية الخاصة بالمهنة.", iconName: "IdCard", badge: "2", files: ["المنهاج الرسمي للمادة", "قرار التعيين والترقية"] },
+  { id: 2, title: "الوثائق الخاصة بالأستاذ", desc: "القرارات الوزارية، المناهج، والوثائق الرسمية الخاصة بالمهنة.", iconName: "UserCheck", badge: "2", files: ["المنهاج الرسمي للمادة", "قرار التعيين والترقية"] },
   { id: 3, title: "الفروض والاختبارات", desc: "مواضيع الفروض والاختبارات، تقارير الخرجات الميدانية.", iconName: "FileText", badge: "3", files: ["فرض الثلاثي الأول رياضيات", "تصحيح نموذج الاختبار"] },
   { id: 4, title: "التكوين", desc: "ملفات التكوين الذاتي، الملتقيات، والندوات التربوية.", iconName: "GraduationCap", badge: "4", files: ["شهادة تكوين المقاربة بالكفاءات"] },
   { id: 5, title: "كتب مساعدة", desc: "المراجع، الكتب المدرسية، والأدلة الأستاذية المساعدة.", iconName: "Book", badge: "5", files: ["دليل الأستاذ السنة الخامسة"] },
@@ -78,7 +78,7 @@ export default function App() {
     const props = { className: "w-6 h-6" };
     switch (name) {
       case 'BookOpen': return <BookOpen {...props} />;
-      case 'IdCard': return <IdCard {...props} />;
+      case 'UserCheck': return <UserCheck {...props} />;
       case 'FileText': return <FileText {...props} />;
       case 'GraduationCap': return <GraduationCap {...props} />;
       case 'Book': return <Book {...props} />;
@@ -113,7 +113,7 @@ export default function App() {
               onClick={() => setIsStatsOpen(true)}
               className="flex items-center space-x-2 space-x-reverse bg-indigo-50 text-indigo-700 px-4 py-2.5 rounded-xl font-bold text-sm hover:bg-indigo-100 transition"
             >
-              <ChartPie className="w-4 h-4 ml-1" />
+              <BarChart3 className="w-4 h-4 ml-1" />
               <span>إحصائيات الملفات</span>
             </button>
           </div>
