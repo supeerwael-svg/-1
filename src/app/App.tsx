@@ -79,7 +79,7 @@ const MainLayout: React.FC = () => {
         )}
       </main>
 
-            {/* شريط التنقل السفلي للهواتف (Bottom Navigation) */}
+      {/* شريط التنقل السفلي للهواتف (Bottom Navigation) */}
       <nav className="fixed bottom-0 left-0 right-0 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-2 px-2 flex justify-between items-center z-50 shadow-lg">
         <button onClick={() => setActiveTab('home')} className={`flex-1 flex flex-col items-center py-1 ${activeTab === 'home' ? 'text-emerald-600 dark:text-emerald-400 font-bold' : 'text-slate-400'}`}>
           <BookOpen size={20} />
@@ -103,6 +103,9 @@ const MainLayout: React.FC = () => {
         </button>
       </nav>
 
+    </div>
+  );
+};
 
 export default function App() {
   return (
