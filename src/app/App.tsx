@@ -79,33 +79,30 @@ const MainLayout: React.FC = () => {
         )}
       </main>
 
-      {/* شريط التنقل السفلي للهواتف (Bottom Navigation) */}
-      <nav className="fixed bottom-0 left-0 right-0 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-2 px-4 flex justify-around items-center z-50 shadow-lg">
-        <button onClick={() => setActiveTab('home')} className={`flex flex-col items-center p-1 ${activeTab === 'home' ? 'text-emerald-600 dark:text-emerald-400' : 'text-slate-400'}`}>
-          <BookOpen size={22} />
-          <span className="text-[10px] mt-1">{t('home')}</span>
+            {/* شريط التنقل السفلي للهواتف (Bottom Navigation) */}
+      <nav className="fixed bottom-0 left-0 right-0 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-2 px-2 flex justify-between items-center z-50 shadow-lg">
+        <button onClick={() => setActiveTab('home')} className={`flex-1 flex flex-col items-center py-1 ${activeTab === 'home' ? 'text-emerald-600 dark:text-emerald-400 font-bold' : 'text-slate-400'}`}>
+          <BookOpen size={20} />
+          <span className="text-[10px] mt-1">الرئيسية</span>
         </button>
-        <button onClick={() => setActiveTab('library')} className={`flex flex-col items-center p-1 ${activeTab === 'library' ? 'text-emerald-600 dark:text-emerald-400' : 'text-slate-400'}`}>
-          <FolderArchive size={22} />
-          <span className="text-[10px] mt-1">{t('library')}</span>
+        <button onClick={() => setActiveTab('library')} className={`flex-1 flex flex-col items-center py-1 ${activeTab === 'library' ? 'text-emerald-600 dark:text-emerald-400 font-bold' : 'text-slate-400'}`}>
+          <FolderArchive size={20} />
+          <span className="text-[10px] mt-1">المكتبة</span>
         </button>
-        <button onClick={() => setActiveTab('seminars')} className={`flex flex-col items-center p-1 ${activeTab === 'seminars' ? 'text-emerald-600 dark:text-emerald-400' : 'text-slate-400'}`}>
-          <Calendar size={22} />
-          <span className="text-[10px] mt-1">{t('seminars')}</span>
+        <button onClick={() => setActiveTab('seminars')} className={`flex-1 flex flex-col items-center py-1 ${activeTab === 'seminars' ? 'text-emerald-600 dark:text-emerald-400 font-bold' : 'text-slate-400'}`}>
+          <Calendar size={20} />
+          <span className="text-[10px] mt-1">الندوات</span>
         </button>
-        <button onClick={() => setActiveTab('forum')} className={`flex flex-col items-center p-1 ${activeTab === 'forum' ? 'text-emerald-600 dark:text-emerald-400' : 'text-slate-400'}`}>
-          <MessageSquare size={22} />
-          <span className="text-[10px] mt-1">{t('forum')}</span>
+        <button onClick={() => setActiveTab('forum')} className={`flex-1 flex flex-col items-center py-1 ${activeTab === 'forum' ? 'text-emerald-600 dark:text-emerald-400 font-bold' : 'text-slate-400'}`}>
+          <MessageSquare size={20} />
+          <span className="text-[10px] mt-1">المنتدى</span>
         </button>
-        <button onClick={() => setActiveTab('settings')} className={`flex flex-col items-center p-1 ${activeTab === 'settings' ? 'text-emerald-600 dark:text-emerald-400' : 'text-slate-400'}`}>
-          <Settings size={22} />
-          <span className="text-[10px] mt-1">{t('settings')}</span>
+        <button onClick={() => setActiveTab('settings')} className={`flex-1 flex flex-col items-center py-1 ${activeTab === 'settings' ? 'text-emerald-600 dark:text-emerald-400 font-bold' : 'text-slate-400'}`}>
+          <Settings size={20} />
+          <span className="text-[10px] mt-1">الإعدادات</span>
         </button>
       </nav>
 
-    </div>
-  );
-};
 
 export default function App() {
   return (
